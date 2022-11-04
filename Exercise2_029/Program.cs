@@ -40,7 +40,25 @@ namespace Exercise2_029
             }
         }
 
- 
+        public void BubbleSortArray()
+        {
+            for (int i = 1; i < n; i++)// untuk n - 1 passes
+            {
+                //pada pass i,bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int ar = 0; ar < n - i; ar++)
+                {
+                    if (alif[ar] > alif[ar + 1]) //jika elemen tidak dalam urutan yang benar
+                    {
+                        //tukar elemen
+                        int temp; //membuat temporary
+                        temp = alif[ar]; //mhigheklarasikan alif[ar]; sebagai temporary
+                        alif[ar] = alif[ar + 1]; //memindahkan alif[ar + 1] ke posisi alif[ar] yang dimana sebagai temporary
+                        alif[ar + 1] = temp; // alif[ar + 1] sudah berada di posisi alif[ar] yang dimana sebagai temporary
+                    }
+                }
+            }
+        }
+
 
         static void Main(string[] args)
         {
