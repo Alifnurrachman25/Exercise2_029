@@ -72,12 +72,12 @@ namespace Exercise2_029
             }
             Console.WriteLine(""); //membuat space kosong
         }
-
+        
 
 
         static void Main(string[] args)
         {
-           
+            
         }
     }
 }
