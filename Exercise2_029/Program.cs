@@ -27,7 +27,17 @@ namespace Exercise2_029
                 else
                     Console.WriteLine("\n Array should have minimum 1 and maximum 31 elements.\n");
             }
-           
+            //Accept array elements
+            Console.WriteLine("");
+            Console.WriteLine("----------------------");
+            Console.WriteLine(" Enter array elements ");
+            Console.WriteLine("----------------------");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                alif[i] = Int32.Parse(s1);
+            }
         }
 
  
