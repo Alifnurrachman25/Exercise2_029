@@ -59,10 +59,25 @@ namespace Exercise2_029
             }
         }
 
+        public void display()
+        {
+            //menampilkan array yang tersusun
+            Console.WriteLine(""); //membuat space kosong
+            Console.WriteLine("------------------------------------"); //membuat batasan garis
+            Console.WriteLine(" Elemen array yang telah tersusun "); //membuat teks " Elemen array yang telah tersusun "
+            Console.WriteLine("------------------------------------"); //membuat batasan garis
+            for (int ar = 0; ar < n; ar++)
+            {
+                Console.WriteLine(alif[ar]);
+            }
+            Console.WriteLine(""); //membuat space kosong
+        }
+
+
 
         static void Main(string[] args)
         {
-
+           
         }
     }
 }
