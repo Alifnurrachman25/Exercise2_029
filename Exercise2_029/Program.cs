@@ -98,7 +98,7 @@ namespace Exercise2_029
                     myList.input();
                     myList.BubbleSortArray();
                     myList.display();
-                    Console.ReadLine();
+                    Console.ReadLine(); 
                     break;
             }
         }
