@@ -77,7 +77,30 @@ namespace Exercise2_029
 
         static void Main(string[] args)
         {
-            
+            Program myList = new Program();
+            int pilihanmenu;
+            char ch;
+
+            Console.WriteLine("Menu Option");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("1. Bubble sort");
+            Console.WriteLine("2. Merge sort");
+            Console.WriteLine("3. Exit");
+            Console.WriteLine("Enter your choice (1,2,3) : ");
+            pilihanmenu = Convert.ToInt32(Console.ReadLine());
+            switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Bubble sort");
+                    Console.WriteLine("------------------");
+                    myList.input();
+                    myList.BubbleSortArray();
+                    myList.display();
+                    Console.ReadLine();
+                    break;
+            }
         }
     }
 }
